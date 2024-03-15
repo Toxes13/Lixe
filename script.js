@@ -304,3 +304,195 @@
 // console.log(findNumber(8, 17, 3)); // повертає 9
 // console.log(findNumber(16, 35, 7)); // повертає 21
 // console.log(findNumber(6, 9, 4)); // повертає 8
+
+// function getOrderQuantity(order) {
+//   return order.length;
+// }
+
+// console.log(getOrderQuantity(["apple", "peach", "pear", "banana"]))
+// console.log(getOrderQuantity(["apple", "banana"]))
+// console.log(getOrderQuantity(["apple", "banana", "pear"]))
+// console.log(getOrderQuantity([]))
+
+// function getLastElementMeta(array) {
+
+//   const newMas = [array.length-1, array[array.length-1]];
+//   return newMas;
+// }
+
+// console.log(getLastElementMeta(["apple", "peach", "pear", "banana"])) // повертає [3, "banana"]
+// console.log(getLastElementMeta(["apple", "peach", "pear"])) // повертає [2, "pear"]
+// console.log(getLastElementMeta(["apple", "peach"])) // повертає [1, "peach"]
+// console.log(getLastElementMeta(["apple"])) // повертає [0, "apple"]
+
+// function getLength(array) {
+
+//     const line = array.join("");
+//     return line.length;
+// }
+
+// console.log(getLength(["Mango", "hurries", "to", "the", "train"])) // повертає 22
+// console.log(getLength(["M", "a", "n", "g", "o"])) //повертає 5
+// console.log(getLength(["top", "picks", "for", "you"])) // повертає 14
+
+// function calculateEngravingPrice(message, pricePerWord) {
+
+//     const first = message.split(" ");
+//     const second = first.length;
+//     const third = second * pricePerWord;
+//     return third;
+
+// }
+
+
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10)) //повертає 50
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 20)) // повертає 100
+// console.log(calculateEngravingPrice("Web-development is creative work", 40)) // повертає 160
+// console.log(calculateEngravingPrice("Web-development is creative work", 20)) // повертає 80
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, 4);
+// const lastThreeEls = fruits.slice(-3);
+
+// console.log(firstTwoEls); // - це масив ["apple", "plum"]
+// console.log(nonExtremeEls);// - це масив ["plum", "pear", "orange"]
+// console.log(lastThreeEls);// - це масив ["pear", "orange", "banana"]
+
+// function getSlice(array, value) {
+//     const index = array.indexOf(value);
+    
+//     if (index === -1) {
+//         return [];
+//     }
+//     else {
+//         return array.slice(0, index+1);
+//     }
+
+// }
+
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Poly")) // повертає ["Mango", "Poly"]
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Ajax")) // повертає ["Mango", "Poly", "Ajax"]
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Mango")) // повертає ["Mango"]
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Jacob")) // повертає []
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Casey")) // повертає []
+
+
+
+// function createArrayOfNumbers(min, max) {
+//     let first = [];
+//     for (let i = min; i <= max; i++) {
+//         first.push(i)
+//     }
+//     return (first);
+// }
+
+// console.log(createArrayOfNumbers(1, 3)) // повертає [1, 2, 3]
+// console.log(createArrayOfNumbers(14, 17)) // повертає [14, 15, 16, 17]
+// console.log(createArrayOfNumbers(29, 34)) // повертає [29, 30, 31, 32, 33, 34]
+
+// Функція calculateTotalPrice(order) приймає один параметр
+// order - масив чисел.Доповни функцію так, щоб вона повертала загальну суму елементів з масиву order.
+
+// function calculateTotalPrice(order) {
+
+//   let sum = 0;
+//   for (const valueOrder of order) {
+//     sum += valueOrder;
+//   } return sum;
+// }
+
+
+// console.log(calculateTotalPrice([12, 85, 37, 4])) // повертає 138
+// console.log(calculateTotalPrice([164, 48, 291])) // повертає 503
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176])) // повертає 1116
+
+// function getEvenNumbers(start, end) {
+
+//     let value = [];
+//     for (let i = start; i <= end; i++) {
+//         if (i % 2 === 0) {
+//             value.push(i);
+//         }
+//     }
+//      return value;
+// }
+
+
+// console.log(getEvenNumbers(2, 5)) // повертає [2, 4]
+// console.log(getEvenNumbers(3, 11)) // повертає [4, 6, 8, 10]
+// console.log(getEvenNumbers(6, 12)) // повертає [6, 8, 10, 12]
+// console.log(getEvenNumbers(8, 8)) // повертає [8]
+// console.log(getEvenNumbers(7, 7)) // повертає []
+
+// function checkStorage(storage, item) {
+
+//     const reg = item.toLowerCase();
+
+//     if (storage.includes(reg)) {
+//         return `${reg} is available to order!`;
+//     }
+//     else {
+//         return "Sorry! We are out of stock!";
+//     }
+// }
+
+// console.log(checkStorage(["apple", "plum", "pear"], "plum")) // повертає "plum is available to order!"
+// console.log(checkStorage(["apple", "plum", "pear"], "pLuM")) // повертає "plum is available to order!"
+// console.log(checkStorage(["apple", "plum", "pear"], "pear")) // повертає "pear is available to order!"
+// console.log(checkStorage(["apple", "plum", "pear"], "pEAr")) // повертає "pear is available to order!"
+// console.log(checkStorage(["apple", "plum", "pear"], "orange")) // повертає "Sorry! We are out of stock!"
+// console.log(checkStorage(["apple", "plum", "pear"], "carrot")) // повертає "Sorry! We are out of stock!"
+
+// Перед розв'язанням цієї задачі варто зазначити, що таке спільні елементи.
+// Спільними елементами масивів називають ті елементи, які присутні у всіх масивах.
+
+// Наприклад, у двох масивах[1, 3, 5] і[0, 8, 5, 3] спільними будуть числа 3 і 5,
+// оскільки вони присутні в обох вхідних масивах.
+// А числа 0, 1 і 8 присутні тільки в одному з масивів.
+
+// function getCommonElements(array1, array2) {
+
+//     const newArray = [];
+    
+//     for (let i = 0; i < array1.length; i++) {
+//         if (array2.includes(array1[i])) {
+//             newArray.push(array1[i]);
+//         }
+//     }
+// return newArray;
+//     }
+
+
+// console.log(getCommonElements([1, 2, 3], [2, 4])) // повертає [2]
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19])) // повертає [1, 2]
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])) // повертає [12, 27, 3]
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40])) // повертає [10, 30, 40]
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30])) // повертає []function createReversedArray() {
+
+// function createReversedArray() {
+
+//     const args = Array.from(arguments);
+// 	return args.toReversed();
+// }
+
+// console.log(createReversedArray(12, 85, 37, 4)) //повертає [4, 37, 85, 12]
+// console.log(createReversedArray(164, 48, 291)) //повертає [291, 48, 164]
+// console.log(createReversedArray(412, 371, 94, 63, 176)) //повертає [176, 63, 94, 371, 412]
+// console.log(createReversedArray()) // повертає []
+
+// function calculateTax(amount, taxRate = 0.2) {
+
+//   const total = amount * taxRate;
+//   return total;
+// }
+
+// console.log(calculateTax(100, 0.2)) // повертає 20
+// console.log(calculateTax(200, 0.2)) // повертає 40
+// console.log(calculateTax(100, 0.3)) // повертає 30
+// console.log(calculateTax(200, 0.3)) // повертає 60
+// console.log(calculateTax(200, 0.1)) // повертає 20
+// console.log(calculateTax(100)) //повертає 20
+// console.log(calculateTax(100, 0.1)) // повертає 10
+// console.log(calculateTax(200)) //повертає 40
