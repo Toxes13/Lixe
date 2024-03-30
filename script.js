@@ -496,3 +496,296 @@
 // console.log(calculateTax(100)) //повертає 20
 // console.log(calculateTax(100, 0.1)) // повертає 10
 // console.log(calculateTax(200)) //повертає 40
+
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+
+// const keys = [];
+// const values = [];
+// for (const key in apartment) {
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+
+// console.log(keys);
+// console.log(values);
+
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   const values = Object.values(salaries);
+
+//  for (let name of values) {
+//    totalSalary += name;
+   
+//  }
+// return totalSalary;
+// }
+
+
+
+
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 })) // повертає 330
+// console.log(countTotalSalary({})) // повертає 0
+// console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 })) //повертає 330
+
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+
+// const values = [];
+// const keys = Object.keys(apartment);
+
+
+// for (let key of keys) {
+//   values.push(apartment[key]);
+// }
+
+// console.log(values);
+
+// function countProps(object) {
+//   let propCount = 0;
+// const values = Object.keys(object);
+//   for (let name of values) {
+//     propCount += 1;
+//   }
+//   return propCount;
+// }
+
+
+// console.log(countProps({})) // повертає 0
+// console.log(countProps({ name: "Mango", age: 2 })) // повертає 2
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })) // повертає 3
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+
+// for (let color of colors) {
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
+
+// console.log(hexColors);
+// console.log(rgbColors);
+
+// function getProductPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+
+//   for (let product of products) {
+//     if (product.name !== productName) {
+//     }
+//     else {
+//       return product.price;
+//     }
+//   }
+//   return null
+// }
+
+
+// console.log(getProductPrice("Radar")) // повертає 1300.
+// console.log(getProductPrice("Grip")) // повертає 1200.
+// console.log(getProductPrice("Scanner")) // повертає 2700.
+// console.log(getProductPrice("Droid")) // повертає 400.
+// console.log(getProductPrice("Engine")) // повертає null.
+
+// function getAllPropValues(propName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//   const total = [];
+
+//   for (let product of products) {
+//     if (Object.keys(product).includes(propName)) {
+//       total.push(product[propName]);
+    
+//     }
+//   }
+//   return total;
+//   }
+
+
+// console.log(getAllPropValues("name")) // повертає ["Radar", "Scanner", "Droid", "Grip"]
+// console.log(getAllPropValues("quantity")) // повертає [4, 3, 7, 9]
+// console.log(getAllPropValues("price")) // повертає [1300, 2700, 400, 1200]
+// console.log(getAllPropValues("category")) // повертає []
+
+
+// function calculateTotalPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+//  for (let product of products) {
+//     if (product.name !== productName) {
+//     }
+//     else {
+//       return product.price * product.quantity;
+//     }
+//   }
+//   return `Product Blaster not found!`
+// }
+
+
+// console.log(calculateTotalPrice("Blaster")) // повертає "Product Blaster not found!"
+// console.log(calculateTotalPrice("Radar")) // повертає 5200
+// console.log(calculateTotalPrice("Droid")) // повертає 2800
+// console.log(calculateTotalPrice("Grip")) // повертає 10800
+// console.log(calculateTotalPrice("Scanner")) // повертає 8100
+
+// const atTheOldToad = {
+//   potions: [],
+//   getPotions() {
+//     return "List of all available potions";
+//   },
+//   addPotion(potionName) {
+//     return `Adding ${potionName}`;
+//   },
+// };
+
+
+// console.log(atTheOldToad.addPotion("Invisibility")) // повертає рядок "Adding Invisibility"
+// console.log(atTheOldToad.addPotion("Power potion")) // повертає рядок "Adding Power potion"
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Stone skin"],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     this.potions.push(potionName);
+//   }
+// };
+
+// console.log(atTheOldToad.getPotions());
+// atTheOldToad.addPotion("Invisibility");
+// console.log(atTheOldToad.getPotions())
+// atTheOldToad.addPotion("Power potion");
+// console.log(atTheOldToad.getPotions())
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     this.potions.push(newPotion);
+//   },
+//   getTotalPrice() {
+//     let total = 0;
+
+//   for (const potion of this.potions) {
+//     total += potion.price;
+//   }
+//     return total;
+//   },
+// };
+
+
+// atTheOldToad.addPotion({ name: "Invisibility", price: 620 }) //, в масиві potions останнім елементом буде цей об'єкт
+// atTheOldToad.addPotion({ name: "Power potion", price: 270 }) //, в масиві potions останнім елементом буде цей об'єкт
+// console.log(atTheOldToad.getTotalPrice()) // повертає загальну вартість усіх зілль з властивості potions
+// console.log(atTheOldToad.potions);
+
+
+// function add(...args) {
+
+//     let total = 0;
+//   for (let arg of args) {
+//     total += arg;
+//     }
+//     return total;
+// }
+
+
+// console.log(add(15, 27)) // повертає 42
+// console.log(add(12, 4, 11, 48)) // повертає 75
+// console.log(add(32, 6, 13, 19, 8)) // повертає 78
+
+// function addOverNum(value, ...args) {
+
+//     let result = 0;
+    
+//   for (let arg of args) {
+//     if (arg > value) {
+//         result += arg;;
+//       }
+//   }
+// return result;
+// }
+
+
+// console.log(addOverNum(50, 15, 27)) // повертає 0
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8)) // повертає 71
+// console.log(addOverNum(15, 32, 6, 13, 19, 8)) // повертає 51
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36)) // повертає 218
+
+
+// function getExtremeScores(scores) {
+
+//     let max = Math.max(...scores);
+//     let min = Math.min(...scores);
+//     return {best: max, worst: min}
+  
+// }
+
+// console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26])) //повертає об'єкт { best: 93, worst: 17 }
+// console.log(getExtremeScores([19, 7, 4, 17, 81, 24])) //повертає об'єкт { best: 81, worst: 4 }
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
+
+// console.log(allScores)
+// console.log(bestScore)
+// console.log(worstScore)
+
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+// console.log(finalSettings);
