@@ -788,198 +788,202 @@
 
 // const finalSettings = { ...defaultSettings, ...overrideSettings };
 
-// console.log(finalSettings);
+// <<<<<<< HEAD
+// // console.log(finalSettings);
 
-// function makePizza() {
-//   return "Your pizza is being prepared, please wait.";
-// }
+// // function makePizza() {
+// //   return "Your pizza is being prepared, please wait.";
+// // }
 
-// const result = makePizza();
-// const pointer = (makePizza);
+// // const result = makePizza();
+// // const pointer = (makePizza);
 
-// function deliverPizza(pizzaName) {
-//   return `Delivering ${pizzaName} pizza.`;
-// }
+// // function deliverPizza(pizzaName) {
+// //   return `Delivering ${pizzaName} pizza.`;
+// // }
 
-// function makePizza(pizzaName) {
-//   return `Pizza ${pizzaName} is being prepared, please wait...`;
-// }
+// // function makePizza(pizzaName) {
+// //   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// // }
 
-// function makeMessage(pizzaName, callback) {
-//   return callback(pizzaName);
-// }
-
-
-// console.log(makeMessage("Royal Grand", makePizza)) // "Pizza Royal Grand is being prepared, please wait..."
-// console.log(makeMessage("Ultracheese", deliverPizza)) // "Delivering Ultracheese pizza."
-
-// function makePizza(pizzaName, callback) {
-//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
-//   callback(pizzaName);
-// }
-
-// makePizza("Royal Grand", function deliverPizza(pizzaName) {
-//   console.log(`Delivering pizza ${pizzaName}`);
-// });
-
-// makePizza("Ultracheese", function eatPizza(pizzaName) {
-//   console.log(`Eating pizza ${pizzaName}`);
-// });
+// // function makeMessage(pizzaName, callback) {
+// //   return callback(pizzaName);
+// // }
 
 
-// function calculateTotalPrice(orderedItems) {
-//     let totalPrice = 0;
+// // console.log(makeMessage("Royal Grand", makePizza)) // "Pizza Royal Grand is being prepared, please wait..."
+// // console.log(makeMessage("Ultracheese", deliverPizza)) // "Delivering Ultracheese pizza."
 
-//     orderedItems.forEach(function (item) {
-//       totalPrice += item;
-//     });
+// // function makePizza(pizzaName, callback) {
+// //   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+// //   callback(pizzaName);
+// // }
+
+// // makePizza("Royal Grand", function deliverPizza(pizzaName) {
+// //   console.log(`Delivering pizza ${pizzaName}`);
+// // });
+
+// // makePizza("Ultracheese", function eatPizza(pizzaName) {
+// //   console.log(`Eating pizza ${pizzaName}`);
+// // });
+
+
+// // function calculateTotalPrice(orderedItems) {
+// //     let totalPrice = 0;
+
+// //     orderedItems.forEach(function (item) {
+// //       totalPrice += item;
+// //     });
  
-//   return totalPrice;
-// }
+// //   return totalPrice;
+// // }
 
 
-// console.log(calculateTotalPrice([12, 85, 37, 4])) //повертає 138
-// console.log(calculateTotalPrice([164, 48, 291])) //повертає 503
-// console.log(calculateTotalPrice([412, 371, 94, 63, 176])) //повертає 1116
+// // console.log(calculateTotalPrice([12, 85, 37, 4])) //повертає 138
+// // console.log(calculateTotalPrice([164, 48, 291])) //повертає 503
+// // console.log(calculateTotalPrice([412, 371, 94, 63, 176])) //повертає 1116
 
-//orderedItems.forEach((item) => {});// можно указать через стрелочную функцию
-
-
-// function filterArray(numbers, value) {
-//     let array = [];
-
-//     numbers.forEach(function (number) {
-//         if (number > value) {
-//             array.push(number);
-//         }
-//     });
-//     return array;
-// }
-
-// console.log(filterArray([1, 2, 3, 4, 5], 3)) // повертає [4, 5]
-// console.log(filterArray([1, 2, 3, 4, 5], 4)) // повертає [5]
-// console.log(filterArray([1, 2, 3, 4, 5], 5)) // повертає []
-// console.log(filterArray([12, 24, 8, 41, 76], 38)) // повертає [41, 76]
-// console.log(filterArray([12, 24, 8, 41, 76], 20)) // повертає [24, 41, 76]
-
-// const calculateTotalPrice = (quantity, pricePerItem) => {
-//     return quantity * pricePerItem;
-//   }
+// //orderedItems.forEach((item) => {});// можно указать через стрелочную функцию
 
 
-// console.log(calculateTotalPrice(5, 100)) // повертає 500
-// console.log(calculateTotalPrice(8, 60)) // повертає 480
-// console.log(calculateTotalPrice(3, 400)) // повертає 1200
+// // function filterArray(numbers, value) {
+// //     let array = [];
 
-// const calculateTotalPrice = (orderedItems) => {
-//   let totalPrice = 0;
+// //     numbers.forEach(function (number) {
+// //         if (number > value) {
+// //             array.push(number);
+// //         }
+// //     });
+// //     return array;
+// // }
 
-//   orderedItems.forEach((item) => {
-//     totalPrice += item;
-//   });
+// // console.log(filterArray([1, 2, 3, 4, 5], 3)) // повертає [4, 5]
+// // console.log(filterArray([1, 2, 3, 4, 5], 4)) // повертає [5]
+// // console.log(filterArray([1, 2, 3, 4, 5], 5)) // повертає []
+// // console.log(filterArray([12, 24, 8, 41, 76], 38)) // повертає [41, 76]
+// // console.log(filterArray([12, 24, 8, 41, 76], 20)) // повертає [24, 41, 76]
 
-//   return totalPrice;
-// }
-
-// console.log(calculateTotalPrice([12, 85, 37, 4])) // повертає 138
-// console.log(calculateTotalPrice([164, 48, 291])) // повертає 503
-// console.log(calculateTotalPrice([412, 371, 94, 63, 176])) // повертає 1116
-
-// const filterArray = (numbers, value) => {
-//   const filteredNumbers = [];
-
-//   numbers.forEach((number) => {
-//     if (number > value) {
-//       filteredNumbers.push(number);
-//     }
-//   });
-
-//   return filteredNumbers;
-// }
-
-// console.log(filterArray([1, 2, 3, 4, 5], 3)) // повертає [4, 5]
-// console.log(filterArray([1, 2, 3, 4, 5], 4)) // повертає [5]
-// console.log(filterArray([1, 2, 3, 4, 5], 5)) // повертає []
-// console.log(filterArray([12, 24, 8, 41, 76], 38)) // повертає [41, 76]
-// console.log(filterArray([12, 24, 8, 41, 76], 20)) // повертає [24, 41, 76]
-
-// function changeEven(numbers, value) {
-//     const array = [];
-
-//     numbers.forEach((number) => {
-//         if (number % 2 === 0) {
-//             number += value;
-//         }
-//         array.push(number);
-//     });
-//     return array;
-//      }
+// // const calculateTotalPrice = (quantity, pricePerItem) => {
+// //     return quantity * pricePerItem;
+// //   }
 
 
-// console.log(changeEven([1, 2, 3, 4, 5], 10)) // повертає новий масив [1, 12, 3, 14, 5]
-// console.log(changeEven([2, 8, 3, 7, 4, 6], 10)) // повертає новий масив [12, 18, 3, 7, 14, 16]
-// console.log(changeEven([17, 24, 68, 31, 42], 100)) // повертає новий масив [17, 124, 168, 31, 142]
-// console.log(changeEven([44, 13, 81, 92, 36, 54], 100)) // повертає новий масив [144, 13, 81, 192, 136, 154]
+// // console.log(calculateTotalPrice(5, 100)) // повертає 500
+// // console.log(calculateTotalPrice(8, 60)) // повертає 480
+// // console.log(calculateTotalPrice(3, 400)) // повертає 1200
 
-// НЕ РЕШЕНО! //
-// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // const calculateTotalPrice = (orderedItems) => {
+// //   let totalPrice = 0;
 
-// // const planetsLengths = planets.map(planet => planet.toLowerCase());
-// const planetsLengths = planets;
-// const lengths = planets.length;
+// //   orderedItems.forEach((item) => {
+// //     totalPrice += item;
+// //   });
 
-// console.log(lengths);
+// //   return totalPrice;
+// // }
+
+// // console.log(calculateTotalPrice([12, 85, 37, 4])) // повертає 138
+// // console.log(calculateTotalPrice([164, 48, 291])) // повертає 503
+// // console.log(calculateTotalPrice([412, 371, 94, 63, 176])) // повертає 1116
+
+// // const filterArray = (numbers, value) => {
+// //   const filteredNumbers = [];
+
+// //   numbers.forEach((number) => {
+// //     if (number > value) {
+// //       filteredNumbers.push(number);
+// //     }
+// //   });
+
+// //   return filteredNumbers;
+// // }
+
+// // console.log(filterArray([1, 2, 3, 4, 5], 3)) // повертає [4, 5]
+// // console.log(filterArray([1, 2, 3, 4, 5], 4)) // повертає [5]
+// // console.log(filterArray([1, 2, 3, 4, 5], 5)) // повертає []
+// // console.log(filterArray([12, 24, 8, 41, 76], 38)) // повертає [41, 76]
+// // console.log(filterArray([12, 24, 8, 41, 76], 20)) // повертає [24, 41, 76]
+
+// // function changeEven(numbers, value) {
+// //     const array = [];
+
+// //     numbers.forEach((number) => {
+// //         if (number % 2 === 0) {
+// //             number += value;
+// //         }
+// //         array.push(number);
+// //     });
+// //     return array;
+// //      }
 
 
-// const LOW_SCORE = 50;
-// const HIGH_SCORE = 80;
-// const students = [
-//   { name: "Mango", score: 83 },
-//   { name: "Poly", score: 59 },
-//   { name: "Ajax", score: 37 },
-//   { name: "Kiwi", score: 94 },
-//   { name: "Houston", score: 64 },
-// ];
+// // console.log(changeEven([1, 2, 3, 4, 5], 10)) // повертає новий масив [1, 12, 3, 14, 5]
+// // console.log(changeEven([2, 8, 3, 7, 4, 6], 10)) // повертає новий масив [12, 18, 3, 7, 14, 16]
+// // console.log(changeEven([17, 24, 68, 31, 42], 100)) // повертає новий масив [17, 124, 168, 31, 142]
+// // console.log(changeEven([44, 13, 81, 92, 36, 54], 100)) // повертає новий масив [144, 13, 81, 192, 136, 154]
 
-// const best = students.filter(student => student.score >= HIGH_SCORE);
-// console.log(best); // Масив об'єктів з іменами Mango і Kiwi
+// // НЕ РЕШЕНО! //
+// // const planets = ["Earth", "Mars", "Venus", "Jupiter"];
 
-// const worst = students.filter(student => student.score < LOW_SCORE);
-// console.log(worst); // Масив з одним об'єктом Ajax
+// // // const planetsLengths = planets.map(planet => planet.toLowerCase());
+// // const planetsLengths = planets;
+// // const lengths = planets.length;
 
-// // У колбек-функції зручно деструктуризувати властивості об'єкта
-// const average = students.filter(
-//   ({ score }) => score >= LOW_SCORE && score < HIGH_SCORE
-// );
+// // console.log(lengths);
 
-// console.log(average); // Масив об'єктів з іменами Poly і Houston
 
-// const books = [
-//   {
-//     title: "The Last Kingdom",
-//     author: "Bernard Cornwell",
-//     rating: 8.38,
-//   },
-//   {
-//     title: "Beside Still Waters",
-//     author: "Robert Sheckley",
-//     rating: 8.51,
-//   },
-//   {
-//     title: "The Dream of a Ridiculous Man",
-//     author: "Fyodor Dostoevsky",
-//     rating: 7.75,
-//   },
-//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
-//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
-// ];
+// // const LOW_SCORE = 50;
+// // const HIGH_SCORE = 80;
+// // const students = [
+// //   { name: "Mango", score: 83 },
+// //   { name: "Poly", score: 59 },
+// //   { name: "Ajax", score: 37 },
+// //   { name: "Kiwi", score: 94 },
+// //   { name: "Houston", score: 64 },
+// // ];
 
-// const MIN_RATING = 8;
-// const AUTHOR = "Bernard Cornwell";
+// // const best = students.filter(student => student.score >= HIGH_SCORE);
+// // console.log(best); // Масив об'єктів з іменами Mango і Kiwi
 
-// const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
-// const booksByAuthor = books.filter(book => book.author === AUTHOR);
+// // const worst = students.filter(student => student.score < LOW_SCORE);
+// // console.log(worst); // Масив з одним об'єктом Ajax
 
-// console.log(topRatedBooks);
-// console.log(booksByAuthor)
+// // // У колбек-функції зручно деструктуризувати властивості об'єкта
+// // const average = students.filter(
+// //   ({ score }) => score >= LOW_SCORE && score < HIGH_SCORE
+// // );
 
+// // console.log(average); // Масив об'єктів з іменами Poly і Houston
+
+// // const books = [
+// //   {
+// //     title: "The Last Kingdom",
+// //     author: "Bernard Cornwell",
+// //     rating: 8.38,
+// //   },
+// //   {
+// //     title: "Beside Still Waters",
+// //     author: "Robert Sheckley",
+// //     rating: 8.51,
+// //   },
+// //   {
+// //     title: "The Dream of a Ridiculous Man",
+// //     author: "Fyodor Dostoevsky",
+// //     rating: 7.75,
+// //   },
+// //   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+// //   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// // ];
+
+// // const MIN_RATING = 8;
+// // const AUTHOR = "Bernard Cornwell";
+
+// // const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
+// // const booksByAuthor = books.filter(book => book.author === AUTHOR);
+
+// // console.log(topRatedBooks);
+// // console.log(booksByAuthor)
+
+// =======
+// console.log(finalSettings);
+// >>>>>>> cdb34dd747f320aaa51ccf59095aab5b3d5fef5f
